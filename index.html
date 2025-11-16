@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<h1>Rock, Paper, Scissors</h1>
+
+<div id="choices">
+  <img src="images/rock.png" alt="Rock" onclick="playGame('rock')" class="choice">
+  <img src="images/paper.png" alt="Paper" onclick="playGame('paper')" class="choice">
+  <img src="images/scissors.png" alt="Scissors" onclick="playGame('scissors')" class="choice">
+</div>
+
+<!-- New Result Box Layout -->
+<div id="resultBox" class="result-container hidden">
+  <div class="choice-box" id="playerChoiceBox"></div>
+  <div class="outcome-box" id="outcomeBox"></div>
+  <div class="choice-box" id="computerChoiceBox"></div>
+</div>
+
+<div id="score">
+  <span id="playerScore">Player: 0</span>
+  <span id="computerScore">Computer: 0</span>
+</div>
+
+<!-- Winner Popup -->
+<div id="winnerPopup" class="hidden">
+  <div class="popup-content">
+    <h2 id="winnerMessage"></h2>
+    <button onclick="resetGame()">Play Again</button>
+  </div>
+</div>
+
+<footer>
+  Created by Darragh Morrissey | Student ID: x25125109 | Week 8 Lab
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
